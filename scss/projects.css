@@ -1,0 +1,189 @@
+.iavbTH {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.iavbTH h2 {
+  font-size: clamp(24px, 5vw, var(--fz-heading));
+}
+.iavbTH .archive-link {
+  font-family: var(--font-mono);
+  font-size: var(--fz-sm);
+}
+.iavbTH .archive-link:after {
+  bottom: 0.1em;
+}
+.iavbTH .projects-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 15px;
+  position: relative;
+  margin-top: 50px;
+}
+@media (max-width: 1080px) {
+  .iavbTH .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+.iavbTH .more-button {
+  color: var(--green);
+  background-color: transparent;
+  border: 1px solid var(--green);
+  border-radius: var(--border-radius);
+  padding: 0.75rem 1rem;
+  font-size: var(--fz-xs);
+  font-family: var(--font-mono);
+  line-height: 1;
+  text-decoration: none;
+  transition: var(--transition);
+  margin: 80px auto 0;
+}
+.iavbTH .more-button:hover, .iavbTH .more-button:focus-visible {
+  outline: none;
+  box-shadow: 3px 3px 0 0 var(--green);
+  transform: translate(-4px, -4px);
+}
+.iavbTH .more-button:after {
+  display: none !important;
+}
+.gJHaRi {
+  position: relative;
+  cursor: default;
+  transition: var(--transition);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .gJHaRi:hover .project-inner, .gJHaRi:focus-within .project-inner {
+    transform: translateY(-7px);
+  }
+}
+.gJHaRi a {
+  position: relative;
+  z-index: 1;
+}
+.gJHaRi .project-inner {
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  transition: var(--transition);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  height: 100%;
+  padding: 2rem 1.75rem;
+  border-radius: var(--border-radius);
+  background-color: var(--light-navy);
+  transition: var(--transition);
+  overflow: auto;
+}
+.gJHaRi .project-inner:hover, .gJHaRi .project-inner:focus-visible {
+  box-shadow: 0 20px 30px -15px var(--navy-shadow);
+}
+.gJHaRi .project-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.gJHaRi .project-top .folder {
+  color: var(--green);
+}
+.gJHaRi .project-top .folder svg {
+  width: 40px;
+  height: 40px;
+}
+.gJHaRi .project-top .project-links {
+  display: flex;
+  align-items: center;
+  margin-right: -10px;
+  color: var(--light-slate);
+}
+.gJHaRi .project-top .project-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 7px;
+}
+.gJHaRi .project-top .project-links a.external svg {
+  width: 22px;
+  height: 22px;
+  margin-top: -4px;
+}
+.gJHaRi .project-top .project-links a svg {
+  width: 20px;
+  height: 20px;
+}
+.gJHaRi .project-title {
+  margin: 0 0 10px;
+  color: var(--lightest-slate);
+  font-size: var(--fz-xxl);
+}
+.gJHaRi .project-title a {
+  position: static;
+}
+.gJHaRi .project-title a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.gJHaRi .project-description {
+  color: var(--light-slate);
+  font-size: 17px;
+}
+.gJHaRi .project-description a {
+  display: inline-block;
+  position: relative;
+  color: var(--green);
+  transition: var(--transition);
+}
+.gJHaRi .project-description a:hover, .gJHaRi .project-description a:focus-visible {
+  color: var(--green);
+  outline: 0;
+}
+.gJHaRi .project-description a:hover:after, .gJHaRi .project-description a:focus-visible:after {
+  width: 100%;
+}
+.gJHaRi .project-description a:hover > *, .gJHaRi .project-description a:focus-visible > * {
+  color: var(--green) !important;
+  transition: var(--transition);
+}
+.gJHaRi .project-description a:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  position: relative;
+  bottom: 0.37em;
+  background-color: var(--green);
+  opacity: 0.5;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .gJHaRi .project-description a:after {
+    transition: var(--transition);
+  }
+}
+.gJHaRi .project-tech-list {
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 20px 0 0 0;
+  list-style: none;
+}
+.gJHaRi .project-tech-list li {
+  font-family: var(--font-mono);
+  font-size: var(--fz-xxs);
+  line-height: 1.75;
+}
+.gJHaRi .project-tech-list li:not(:last-of-type) {
+  margin-right: 15px;
+}

@@ -1,0 +1,62 @@
+.ePyBYl {
+    counter-reset: section 0;
+  }
+  .jnUoFC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+    height: 100vh;
+    padding: 0;
+  }
+  @media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
+    .jnUoFC {
+      height: auto;
+      padding-top: var(--nav-height);
+    }
+  }
+  .jnUoFC h1 {
+    margin: 0 0 30px 4px;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
+    font-weight: 400;
+  }
+  @media (max-width: 480px) {
+    .jnUoFC h1 {
+      margin: 0 0 20px 2px;
+    }
+  }
+  .jnUoFC h3 {
+    margin-top: 5px;
+    color: var(--slate);
+    line-height: 0.9;
+  }
+  .jnUoFC p {
+    margin: 20px 0 0;
+    max-width: 540px;
+  }
+  .jnUoFC .email-link {
+    color: var(--green);
+    background-color: transparent;
+    border: 1px solid var(--green);
+    border-radius: var(--border-radius);
+    padding: 1.25rem 1.75rem;
+    font-size: var(--fz-sm);
+    font-family: var(--font-mono);
+    line-height: 1;
+    text-decoration: none;
+    transition: var(--transition);
+    margin-top: 50px;
+  }
+  .jnUoFC .email-link:hover, .jnUoFC .email-link:focus-visible {
+    outline: none;
+    box-shadow: 4px 4px 0 0 var(--green);
+    transform: translate(-5px, -5px);
+  }
+  .jnUoFC .email-link:after {
+    display: none !important;
+  }
+  

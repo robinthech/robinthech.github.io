@@ -1,0 +1,49 @@
+.hOvuuP {
+  width: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+  color: #a8b2d1;
+}
+@media (max-width: 1080px) {
+  .hOvuuP {
+    left: 20px;
+    right: auto;
+  }
+}
+@media (max-width: 768px) {
+  .hOvuuP {
+    display: none;
+  }
+}
+.dVLQAC {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.dVLQAC:after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0 auto;
+  background-color: #a8b2d1;
+}
+.dVLQAC li:last-of-type {
+  margin-bottom: 20px;
+}
+.dVLQAC li a {
+  padding: 10px;
+}
+.dVLQAC li a:hover, .dVLQAC li a:focus {
+  transform: translateY(-3px);
+}
+.dVLQAC li a svg {
+  width: 20px;
+  height: 20px;
+}
